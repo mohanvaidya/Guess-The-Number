@@ -29,10 +29,11 @@ document.querySelector('.check').addEventListener('click', function () {
     // document.querySelector('.message').textContent = '⛔️ No number!';
     displayMessage('⛔️ No number!');
   }
-  if (guess < 1 || guess > 20) {
+   else if (guess < 1 || guess > 20) {
     displayMessage('Please enter number between 1-20');
+  }
     // When player wins
-  } else if (guess === secretNumber) {
+   else if (guess === secretNumber) {
     // document.querySelector('.message').textContent = '🎉 Correct Number!';
     displayMessage('🎉 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
